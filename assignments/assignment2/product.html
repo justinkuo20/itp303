@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+	<title>Justin's Store</title>
+	<style>
+		html, body {
+			margin: 0;
+			font-family: 'Barlow', sans-serif;
+		}
+		#header  {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		#header h1 {
+			margin: 0;
+		}
+
+		#main-product {
+			margin-left: 10px;
+		}
+		#product-name {
+			visibility: visible;
+		}
+
+		#repeat-product-name{
+			visibility: hidden;
+		}
+
+		.product-row img {
+			padding-left: 80px;
+			width: 300px;	
+		}
+		#promo {
+			width: 300px;
+			text-align: center;
+			background-color: lightgreen;
+			border: 1px solid green;
+			padding: 5px;
+			margin-right: auto;
+			margin-left: auto;
+		
+		}
+		#main-product #details #price {
+			margin-left: auto;
+		}
+
+		#details #reviews img {
+			width: 20%;
+		}
+		#features {
+			/*margin-left: auto;
+			margin-right: auto;*/
+			width: 90%;
+		}
+
+		.related-item {
+			width: 300px;
+			border: 3px solid black;
+			width: 300px;
+			margin: 1%;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.related-item img {
+			width: 100%;
+		}
+		#related-name {
+			margin:10px;
+		}
+
+		.related-item:hover .hover-name {
+			visibility: visible;
+		}
+
+		.related-item .hover-name{
+			background-color: rgba(0,0,0, 0.5);
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 150px;  
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			visibility: hidden;
+		}
+
+
+		@media(min-width: 768px) {
+			.clearfloat {
+				clear: both;
+			}
+
+			.related-item {
+				float: left;
+				width: 29%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+
+			.product-row {
+				float: left;
+				width: 50%;
+			}
+
+			.product-row :after {
+				clear: both;
+				content:"";
+				display: table;
+			}
+
+			#iphone11-photo img {
+				width: 70%;
+			}
+
+			#related-name {
+				padding-left: 15px;
+			}
+
+			#details {
+				float: right;
+				width: 50%;
+			}
+
+			#related-product {
+				float: left;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			.related-item .hover-name{
+			background-color: rgba(0,0,0, 0.5);
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 200px;  
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			visibility: hidden;
+		}
+			h2 {
+				visibility: hidden;
+			}
+
+			#main-product #repeat-product-name {
+				visibility: visible;
+			}
+		}
+
+		@media(min-width: 992px) {
+			.related-item {
+				width: 22%;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			#iphone11-photo img {
+				margin-left: 50px;
+			}
+
+			#promo {
+				margin-top: 30px;
+			}
+
+			#features {
+				font-size: 25px;
+			}
+			#related-product {
+				margin-left: 110px;
+				margin-right: auto;
+			}
+			.related-item .hover-name{
+			background-color: rgba(0,0,0, 0.5);
+			color: white;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 200px;  
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			visibility: hidden;
+		}
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div id="entire">
+		<div id="header">
+			<h1>Justin's Store</h1>
+		</div> 
+	
+		<div id="main-product">
+			<div id="product-name"></div>
+			<h2>iPhone 11</h2>
+		
+
+		<div class ="product-row">
+			<div id="iphone11-photo">
+				<img src="images/iphone11.png" alt="iPhone 11"/>
+			</div>
+
+			<div id="promo">
+				Receive 15% off today!
+			</div>
+		</div>
+
+		<div id="details">
+			<div id="price">
+				<div id="repeat-product-name">
+					<h1>iPhone 11</h1>
+				</div>
+			<h3>Price: $699.99</h3>
+			<div id=reviews><img src="images/review.png" alt="5 stars"/></div>
+			</div>
+	
+
+		<div id="features">
+			<ul>
+				<li>All-day battery life. Hardware and software work together to get the most out of your battery. And thanks to fast‑charge capability, you can recharge in less time.</li>
+				<li>The iPhone 11 the fastest chip ever in a smartphone. A13 Bionic is so powerful, everything you do is fast and fluid.</li>
+				<li>Liquid Retina LCD. The true-to-life all-screen design makes everything look amazing.</li>
+				<li>Haptic Touch. Do all kinds of essential things faster with contextual menus and shortcuts.</li>	
+			</ul>
+		</div>
+
+		</div>
+
+	</div>
+
+	<div id="related-product">
+		<div id="related-name">
+		<h1>Related Products</h1>
+		</div>
+	
+		<div class="related-item">
+			<img src="images/airpods-charge-case.jpeg" alt="Airpods with Charging Case"/>
+			<div class="hover-name">Airpods-Charging Case</div>
+		</div>
+
+		<div class="related-item">
+			<img src="images/airpod-pro.jpeg" alt="Airpods Pro"/>
+			<div class="hover-name">Airpods Pro</div>
+		</div>
+
+		<div class="related-item">
+			<img src="images/airpod-case-black.jpg" alt="Black Silicone Case"/>
+			<div class="hover-name">Airpod Silicone Case</div>
+		</div>
+
+		<div class="related-item">
+			<img src="images/watch3.jpeg" alt="Apple Watch"/>
+			<div class="hover-name">Apple Watch</div>
+		</div>
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div>
+	
+
+</body>
+</html>

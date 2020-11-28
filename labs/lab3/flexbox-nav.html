@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="flexbox.css">
+	<style>
+		html body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			background-color: lightblue;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.bar:hover {
+			background-color: blue;
+			color: white;
+		}
+
+		.bar {
+			padding: 10px;
+			text-align: center;
+			width: 200px;
+		}
+
+		@media(max-width: 991px) {
+			.bar {
+				width: 50%;
+				box-sizing: border-box;
+			}
+
+			.container {
+				flex-wrap: wrap;
+			}
+		}
+
+		@media(max-width: 766px){
+			.bar {
+				width: 100%;
+			}
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<a class ="bar" href="#">Home</a>
+		<a class ="bar" href="#">About</a>
+		<a class ="bar" href="#">Team</a>
+		<a class ="bar" href="#">Contact</a>
+
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+h1 {
+	color: black;
+	
+}
+.jumbotron {
+	text-align: center;
+	background-color: #AFBED1;
+}
+body {
+	background-color: #DBD8F0;
+}
+.card {
+	margin-left: 10px;
+}
+
+#info-break{
+	text-align: center;
+}
+
+hr{
+	width: 50%;
+}
+
+html {
+	background-color: #DBD8F0;
+
+}
+.form-group {
+	text-align: center;
+
+}
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar {
+	background-color:  #7FBEEB;
+}
+
+.navbar-brand {
+	color: green;
+}

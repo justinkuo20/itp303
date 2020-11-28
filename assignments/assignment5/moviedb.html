@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movie API</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel ="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<h1 class="col-12">Cinema News Vendor</h1>
+			<form action="" method="" class="col-12" id="search-form">
+				<div class="form-row">
+					<div class="col-12 mt-4 col-sm-6 col-lg-4">
+						<label for="search-id" class="sr-only">Search:</label>
+						<input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
+					</div>
+
+					<div class="col-12 mt-4 col-sm-auto">
+						<button type="submit" class="btn btn-primary btn-block">Search</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="row">
+			<div class="col-12 mt-4">
+				Showing <span id="num-results" class="font-weight-bold">1</span> of <span id="total-num-results" class="font-weight-bold">1</span> result(s).
+			</div>
+		</div>
+
+		<div class="row display-movie">
+			<div class="col col-6 col-md-4 col-lg-3 movie">
+				<div class="poster">	
+					<img src="">
+					<div class="description">
+						<p class="rating"></p>
+						<p class="num-voters"></p>
+						<p class="synopsis"></p>
+					</div>
+				</div>
+					<p class="movie-title"></p>
+					<p class="release-date"></p>
+			</div>
+		</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>

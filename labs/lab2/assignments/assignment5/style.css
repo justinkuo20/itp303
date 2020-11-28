@@ -1,0 +1,35 @@
+img {
+	width: 100%;
+}
+
+.poster {
+	position: relative;
+}
+
+.description {
+	position: absolute;
+	top:0;
+	text-align: center;
+	padding-top: 10px;
+	visibility: hidden;
+}
+
+.poster:hover .description {
+	visibility: visible;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+.display-movie {
+	margin-top: 30px;
+}
+
+.movie-title {
+	text-align: center;
+}
+
+.release-date {
+	text-align: center;
+}

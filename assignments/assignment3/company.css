@@ -1,0 +1,60 @@
+html body {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+.jumbotron-fluid {
+	background-image: url(images/beans.jpeg);
+}
+.display-4, .lead {
+	color: white;
+	text-align: center;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.nav-link-active {
+	color: blue;
+}
+
+.navbar-brand  {
+	color: tan;
+}
+
+.art-text {
+	padding-top: 60px;
+
+	text-align: center;
+}
+
+.coffee-art img {
+	width: 100%;
+}
+
+.togo-image img {
+	width: 100%;
+}
+.bag-text {
+	text-align: center;
+	padding-top: 100px;
+}
+.footer {
+	font-size: 12px;
+}
+.team-member img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.team-member  {
+	text-align: center;
+}
+
+.team-member .job {
+	font-style: italic;
+}
+
+.team-member .name {
+	font-size: 25px;
+}
+
+.rdj {
+	padding-top: 7px;
+}
